@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930F29792327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F29782327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift */; };
+		9327D1D123269BE0002F8B15 /* NikaExplorectrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1D023269BE0002F8B15 /* NikaExplorectrlr.swift */; };
+		9327D1D42326A013002F8B15 /* NikaExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1D32326A013002F8B15 /* NikaExploreCell.swift */; };
+		9327D1D62326A47E002F8B15 /* NikaMatchesctrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1D52326A47E002F8B15 /* NikaMatchesctrlr.swift */; };
+		9327D1D82326AB67002F8B15 /* NikaMyAccountViewCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1D72326AB67002F8B15 /* NikaMyAccountViewCtrlr.swift */; };
+		9327D1DA2326D3C8002F8B15 /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9327D1D92326D3C8002F8B15 /* Chats.storyboard */; };
+		9327D1DC2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1DB2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift */; };
+		932908062329082600F79105 /* NikaProfileDetailCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932908052329082600F79105 /* NikaProfileDetailCtrlr.swift */; };
+		9344F59523222EDA007DDEBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F59423222EDA007DDEBE /* AppDelegate.swift */; };
+		9344F59723222EDA007DDEBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F59623222EDA007DDEBE /* ViewController.swift */; };
+		9344F59A23222EDA007DDEBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9344F59823222EDA007DDEBE /* Main.storyboard */; };
+		9344F59C23222EDE007DDEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9344F59B23222EDE007DDEBE /* Assets.xcassets */; };
+		9344F59F23222EDE007DDEBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9344F59D23222EDE007DDEBE /* LaunchScreen.storyboard */; };
+		9344F5AA23222EDE007DDEBE /* NikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5A923222EDE007DDEBE /* NikaTests.swift */; };
+		9344F5B523222EDE007DDEBE /* NikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5B423222EDE007DDEBE /* NikaUITests.swift */; };
+		9344F5C423222F3C007DDEBE /* NikaOnBoardingPageCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5C323222F3C007DDEBE /* NikaOnBoardingPageCtrlr.swift */; };
+		9344F5C6232230BB007DDEBE /* NikaOnBoardingContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5C5232230BB007DDEBE /* NikaOnBoardingContentController.swift */; };
+		9344F5C8232231FD007DDEBE /* NikeSignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5C7232231FD007DDEBE /* NikeSignUpController.swift */; };
+		9344F5CA23223D0D007DDEBE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5C923223D0C007DDEBE /* Extensions.swift */; };
+		9344F5CC2322777F007DDEBE /* NikaPrivacyCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5CB2322777F007DDEBE /* NikaPrivacyCtrlr.swift */; };
+		9344F5CE232277A0007DDEBE /* NikaTermsAndConditionsCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5CD232277A0007DDEBE /* NikaTermsAndConditionsCtrlr.swift */; };
+		9344F5D0232286C4007DDEBE /* NikaVerifyEmailCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5CF232286C4007DDEBE /* NikaVerifyEmailCtrlr.swift */; };
+		9344F5D2232286EF007DDEBE /* NikaHomeCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5D1232286EF007DDEBE /* NikaHomeCtrlr.swift */; };
+		939CD4B6232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD4B5232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift */; };
+		939CD4B8232A09B7004FE32F /* NikaSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD4B7232A09B7004FE32F /* NikaSettingsCell.swift */; };
+		939CD4BA232A1140004FE32F /* NikaLogOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD4B9232A1140004FE32F /* NikaLogOutCell.swift */; };
+		93C34F9D232F933E00D2B980 /* CreateProfileReligiousInfoCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F96232F933E00D2B980 /* CreateProfileReligiousInfoCtrlr.swift */; };
+		93C34F9E232F933E00D2B980 /* CreateProfileEduInfoCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F97232F933E00D2B980 /* CreateProfileEduInfoCtrlr.swift */; };
+		93C34F9F232F933E00D2B980 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C34F98232F933E00D2B980 /* Profile.storyboard */; };
+		93C34FA0232F933E00D2B980 /* CreateProfileBasicCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F99232F933E00D2B980 /* CreateProfileBasicCtrlr.swift */; };
+		93C34FA1232F933E00D2B980 /* CreateProfilePhotosCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F9A232F933E00D2B980 /* CreateProfilePhotosCtrlr.swift */; };
+		93C34FA2232F933E00D2B980 /* CreateProfileLanguageInfoCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F9B232F933E00D2B980 /* CreateProfileLanguageInfoCtrlr.swift */; };
+		93C34FA3232F933E00D2B980 /* EditProfileViewCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F9C232F933E00D2B980 /* EditProfileViewCtrlr.swift */; };
+		93C9814C2328D8F1006531AD /* NikaBlockedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9814B2328D8F1006531AD /* NikaBlockedUserCell.swift */; };
+		93C9814E2328E43B006531AD /* NikaLocationPermissionCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9814D2328E43B006531AD /* NikaLocationPermissionCtrlr.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9344F5A623222EDE007DDEBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9344F58923222EDA007DDEBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9344F59023222EDA007DDEBE;
+			remoteInfo = Nika;
+		};
+		9344F5B123222EDE007DDEBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9344F58923222EDA007DDEBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9344F59023222EDA007DDEBE;
+			remoteInfo = Nika;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		930F29782327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaBlockedUsersCtrlr.swift; sourceTree = "<group>"; };
+		9327D1D023269BE0002F8B15 /* NikaExplorectrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaExplorectrlr.swift; sourceTree = "<group>"; };
+		9327D1D32326A013002F8B15 /* NikaExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaExploreCell.swift; sourceTree = "<group>"; };
+		9327D1D52326A47E002F8B15 /* NikaMatchesctrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaMatchesctrlr.swift; sourceTree = "<group>"; };
+		9327D1D72326AB67002F8B15 /* NikaMyAccountViewCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaMyAccountViewCtrlr.swift; sourceTree = "<group>"; };
+		9327D1D92326D3C8002F8B15 /* Chats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chats.storyboard; sourceTree = "<group>"; };
+		9327D1DB2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaChatsViewCtrlr.swift; sourceTree = "<group>"; };
+		932908052329082600F79105 /* NikaProfileDetailCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaProfileDetailCtrlr.swift; sourceTree = "<group>"; };
+		9344F59123222EDA007DDEBE /* Nika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nika.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9344F59423222EDA007DDEBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9344F59623222EDA007DDEBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9344F59923222EDA007DDEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9344F59B23222EDE007DDEBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9344F59E23222EDE007DDEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9344F5A023222EDE007DDEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9344F5A523222EDE007DDEBE /* NikaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9344F5A923222EDE007DDEBE /* NikaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaTests.swift; sourceTree = "<group>"; };
+		9344F5AB23222EDE007DDEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9344F5B023222EDE007DDEBE /* NikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9344F5B423222EDE007DDEBE /* NikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaUITests.swift; sourceTree = "<group>"; };
+		9344F5B623222EDE007DDEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9344F5C323222F3C007DDEBE /* NikaOnBoardingPageCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaOnBoardingPageCtrlr.swift; sourceTree = "<group>"; };
+		9344F5C5232230BB007DDEBE /* NikaOnBoardingContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaOnBoardingContentController.swift; sourceTree = "<group>"; };
+		9344F5C7232231FD007DDEBE /* NikeSignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeSignUpController.swift; sourceTree = "<group>"; };
+		9344F5C923223D0C007DDEBE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9344F5CB2322777F007DDEBE /* NikaPrivacyCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaPrivacyCtrlr.swift; sourceTree = "<group>"; };
+		9344F5CD232277A0007DDEBE /* NikaTermsAndConditionsCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaTermsAndConditionsCtrlr.swift; sourceTree = "<group>"; };
+		9344F5CF232286C4007DDEBE /* NikaVerifyEmailCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaVerifyEmailCtrlr.swift; sourceTree = "<group>"; };
+		9344F5D1232286EF007DDEBE /* NikaHomeCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaHomeCtrlr.swift; sourceTree = "<group>"; };
+		939CD4B5232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaNotificationPermissionCtrlr.swift; sourceTree = "<group>"; };
+		939CD4B7232A09B7004FE32F /* NikaSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaSettingsCell.swift; sourceTree = "<group>"; };
+		939CD4B9232A1140004FE32F /* NikaLogOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaLogOutCell.swift; sourceTree = "<group>"; };
+		93C34F96232F933E00D2B980 /* CreateProfileReligiousInfoCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReligiousInfoCtrlr.swift; sourceTree = "<group>"; };
+		93C34F97232F933E00D2B980 /* CreateProfileEduInfoCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileEduInfoCtrlr.swift; sourceTree = "<group>"; };
+		93C34F98232F933E00D2B980 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		93C34F99232F933E00D2B980 /* CreateProfileBasicCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileBasicCtrlr.swift; sourceTree = "<group>"; };
+		93C34F9A232F933E00D2B980 /* CreateProfilePhotosCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfilePhotosCtrlr.swift; sourceTree = "<group>"; };
+		93C34F9B232F933E00D2B980 /* CreateProfileLanguageInfoCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileLanguageInfoCtrlr.swift; sourceTree = "<group>"; };
+		93C34F9C232F933E00D2B980 /* EditProfileViewCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewCtrlr.swift; sourceTree = "<group>"; };
+		93C9814B2328D8F1006531AD /* NikaBlockedUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaBlockedUserCell.swift; sourceTree = "<group>"; };
+		93C9814D2328E43B006531AD /* NikaLocationPermissionCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaLocationPermissionCtrlr.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9344F58E23222EDA007DDEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9344F5A223222EDE007DDEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9344F5AD23222EDE007DDEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9327D1D223269FF3002F8B15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9327D1D32326A013002F8B15 /* NikaExploreCell.swift */,
+				93C9814B2328D8F1006531AD /* NikaBlockedUserCell.swift */,
+				939CD4B7232A09B7004FE32F /* NikaSettingsCell.swift */,
+				939CD4B9232A1140004FE32F /* NikaLogOutCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9344F58823222EDA007DDEBE = {
+			isa = PBXGroup;
+			children = (
+				9344F59323222EDA007DDEBE /* Nika */,
+				9344F5A823222EDE007DDEBE /* NikaTests */,
+				9344F5B323222EDE007DDEBE /* NikaUITests */,
+				9344F59223222EDA007DDEBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9344F59223222EDA007DDEBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9344F59123222EDA007DDEBE /* Nika.app */,
+				9344F5A523222EDE007DDEBE /* NikaTests.xctest */,
+				9344F5B023222EDE007DDEBE /* NikaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9344F59323222EDA007DDEBE /* Nika */ = {
+			isa = PBXGroup;
+			children = (
+				93C34F87232F92E100D2B980 /* UserProfile */,
+				9327D1D223269FF3002F8B15 /* Views */,
+				9344F5C223222F1C007DDEBE /* OnBoarding */,
+				9344F59423222EDA007DDEBE /* AppDelegate.swift */,
+				9344F59623222EDA007DDEBE /* ViewController.swift */,
+				9344F59823222EDA007DDEBE /* Main.storyboard */,
+				9344F59B23222EDE007DDEBE /* Assets.xcassets */,
+				9344F59D23222EDE007DDEBE /* LaunchScreen.storyboard */,
+				9344F5A023222EDE007DDEBE /* Info.plist */,
+				9344F5C7232231FD007DDEBE /* NikeSignUpController.swift */,
+				9344F5C923223D0C007DDEBE /* Extensions.swift */,
+				9344F5CB2322777F007DDEBE /* NikaPrivacyCtrlr.swift */,
+				9344F5CD232277A0007DDEBE /* NikaTermsAndConditionsCtrlr.swift */,
+				9344F5CF232286C4007DDEBE /* NikaVerifyEmailCtrlr.swift */,
+				9344F5D1232286EF007DDEBE /* NikaHomeCtrlr.swift */,
+				9327D1D023269BE0002F8B15 /* NikaExplorectrlr.swift */,
+				9327D1D52326A47E002F8B15 /* NikaMatchesctrlr.swift */,
+				9327D1D72326AB67002F8B15 /* NikaMyAccountViewCtrlr.swift */,
+				9327D1D92326D3C8002F8B15 /* Chats.storyboard */,
+				9327D1DB2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift */,
+				930F29782327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift */,
+				93C9814D2328E43B006531AD /* NikaLocationPermissionCtrlr.swift */,
+				932908052329082600F79105 /* NikaProfileDetailCtrlr.swift */,
+				939CD4B5232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift */,
+			);
+			path = Nika;
+			sourceTree = "<group>";
+		};
+		9344F5A823222EDE007DDEBE /* NikaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9344F5A923222EDE007DDEBE /* NikaTests.swift */,
+				9344F5AB23222EDE007DDEBE /* Info.plist */,
+			);
+			path = NikaTests;
+			sourceTree = "<group>";
+		};
+		9344F5B323222EDE007DDEBE /* NikaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9344F5B423222EDE007DDEBE /* NikaUITests.swift */,
+				9344F5B623222EDE007DDEBE /* Info.plist */,
+			);
+			path = NikaUITests;
+			sourceTree = "<group>";
+		};
+		9344F5C223222F1C007DDEBE /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				9344F5C323222F3C007DDEBE /* NikaOnBoardingPageCtrlr.swift */,
+				9344F5C5232230BB007DDEBE /* NikaOnBoardingContentController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		93C34F87232F92E100D2B980 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				93C34F99232F933E00D2B980 /* CreateProfileBasicCtrlr.swift */,
+				93C34F97232F933E00D2B980 /* CreateProfileEduInfoCtrlr.swift */,
+				93C34F9B232F933E00D2B980 /* CreateProfileLanguageInfoCtrlr.swift */,
+				93C34F9A232F933E00D2B980 /* CreateProfilePhotosCtrlr.swift */,
+				93C34F96232F933E00D2B980 /* CreateProfileReligiousInfoCtrlr.swift */,
+				93C34F9C232F933E00D2B980 /* EditProfileViewCtrlr.swift */,
+				93C34F98232F933E00D2B980 /* Profile.storyboard */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9344F59023222EDA007DDEBE /* Nika */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9344F5B923222EDE007DDEBE /* Build configuration list for PBXNativeTarget "Nika" */;
+			buildPhases = (
+				9344F58D23222EDA007DDEBE /* Sources */,
+				9344F58E23222EDA007DDEBE /* Frameworks */,
+				9344F58F23222EDA007DDEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nika;
+			productName = Nika;
+			productReference = 9344F59123222EDA007DDEBE /* Nika.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9344F5A423222EDE007DDEBE /* NikaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9344F5BC23222EDE007DDEBE /* Build configuration list for PBXNativeTarget "NikaTests" */;
+			buildPhases = (
+				9344F5A123222EDE007DDEBE /* Sources */,
+				9344F5A223222EDE007DDEBE /* Frameworks */,
+				9344F5A323222EDE007DDEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9344F5A723222EDE007DDEBE /* PBXTargetDependency */,
+			);
+			name = NikaTests;
+			productName = NikaTests;
+			productReference = 9344F5A523222EDE007DDEBE /* NikaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9344F5AF23222EDE007DDEBE /* NikaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9344F5BF23222EDE007DDEBE /* Build configuration list for PBXNativeTarget "NikaUITests" */;
+			buildPhases = (
+				9344F5AC23222EDE007DDEBE /* Sources */,
+				9344F5AD23222EDE007DDEBE /* Frameworks */,
+				9344F5AE23222EDE007DDEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9344F5B223222EDE007DDEBE /* PBXTargetDependency */,
+			);
+			name = NikaUITests;
+			productName = NikaUITests;
+			productReference = 9344F5B023222EDE007DDEBE /* NikaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9344F58923222EDA007DDEBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = 1836;
+				TargetAttributes = {
+					9344F59023222EDA007DDEBE = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9344F5A423222EDE007DDEBE = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9344F59023222EDA007DDEBE;
+					};
+					9344F5AF23222EDE007DDEBE = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9344F59023222EDA007DDEBE;
+					};
+				};
+			};
+			buildConfigurationList = 9344F58C23222EDA007DDEBE /* Build configuration list for PBXProject "Nika" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9344F58823222EDA007DDEBE;
+			productRefGroup = 9344F59223222EDA007DDEBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9344F59023222EDA007DDEBE /* Nika */,
+				9344F5A423222EDE007DDEBE /* NikaTests */,
+				9344F5AF23222EDE007DDEBE /* NikaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9344F58F23222EDA007DDEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9344F59F23222EDE007DDEBE /* LaunchScreen.storyboard in Resources */,
+				9344F59C23222EDE007DDEBE /* Assets.xcassets in Resources */,
+				93C34F9F232F933E00D2B980 /* Profile.storyboard in Resources */,
+				9327D1DA2326D3C8002F8B15 /* Chats.storyboard in Resources */,
+				9344F59A23222EDA007DDEBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9344F5A323222EDE007DDEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9344F5AE23222EDE007DDEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9344F58D23222EDA007DDEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939CD4BA232A1140004FE32F /* NikaLogOutCell.swift in Sources */,
+				9344F5D0232286C4007DDEBE /* NikaVerifyEmailCtrlr.swift in Sources */,
+				93C34F9D232F933E00D2B980 /* CreateProfileReligiousInfoCtrlr.swift in Sources */,
+				9327D1D123269BE0002F8B15 /* NikaExplorectrlr.swift in Sources */,
+				9327D1DC2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift in Sources */,
+				9327D1D62326A47E002F8B15 /* NikaMatchesctrlr.swift in Sources */,
+				93C9814C2328D8F1006531AD /* NikaBlockedUserCell.swift in Sources */,
+				9344F5D2232286EF007DDEBE /* NikaHomeCtrlr.swift in Sources */,
+				9344F59723222EDA007DDEBE /* ViewController.swift in Sources */,
+				93C9814E2328E43B006531AD /* NikaLocationPermissionCtrlr.swift in Sources */,
+				9344F5CA23223D0D007DDEBE /* Extensions.swift in Sources */,
+				930F29792327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift in Sources */,
+				93C34FA0232F933E00D2B980 /* CreateProfileBasicCtrlr.swift in Sources */,
+				9344F5CE232277A0007DDEBE /* NikaTermsAndConditionsCtrlr.swift in Sources */,
+				939CD4B8232A09B7004FE32F /* NikaSettingsCell.swift in Sources */,
+				9327D1D42326A013002F8B15 /* NikaExploreCell.swift in Sources */,
+				93C34FA1232F933E00D2B980 /* CreateProfilePhotosCtrlr.swift in Sources */,
+				9344F5C8232231FD007DDEBE /* NikeSignUpController.swift in Sources */,
+				93C34FA3232F933E00D2B980 /* EditProfileViewCtrlr.swift in Sources */,
+				93C34F9E232F933E00D2B980 /* CreateProfileEduInfoCtrlr.swift in Sources */,
+				9344F5C6232230BB007DDEBE /* NikaOnBoardingContentController.swift in Sources */,
+				9344F59523222EDA007DDEBE /* AppDelegate.swift in Sources */,
+				9344F5CC2322777F007DDEBE /* NikaPrivacyCtrlr.swift in Sources */,
+				9344F5C423222F3C007DDEBE /* NikaOnBoardingPageCtrlr.swift in Sources */,
+				932908062329082600F79105 /* NikaProfileDetailCtrlr.swift in Sources */,
+				93C34FA2232F933E00D2B980 /* CreateProfileLanguageInfoCtrlr.swift in Sources */,
+				939CD4B6232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift in Sources */,
+				9327D1D82326AB67002F8B15 /* NikaMyAccountViewCtrlr.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9344F5A123222EDE007DDEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9344F5AA23222EDE007DDEBE /* NikaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9344F5AC23222EDE007DDEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9344F5B523222EDE007DDEBE /* NikaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9344F5A723222EDE007DDEBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9344F59023222EDA007DDEBE /* Nika */;
+			targetProxy = 9344F5A623222EDE007DDEBE /* PBXContainerItemProxy */;
+		};
+		9344F5B223222EDE007DDEBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9344F59023222EDA007DDEBE /* Nika */;
+			targetProxy = 9344F5B123222EDE007DDEBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9344F59823222EDA007DDEBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9344F59923222EDA007DDEBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9344F59D23222EDE007DDEBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9344F59E23222EDE007DDEBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9344F5B723222EDE007DDEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9344F5B823222EDE007DDEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9344F5BA23222EDE007DDEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Nika/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9344F5BB23222EDE007DDEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Nika/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9344F5BD23222EDE007DDEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3RT2M88J5;
+				INFOPLIST_FILE = NikaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nika.app/Nika";
+			};
+			name = Debug;
+		};
+		9344F5BE23222EDE007DDEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3RT2M88J5;
+				INFOPLIST_FILE = NikaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nika.app/Nika";
+			};
+			name = Release;
+		};
+		9344F5C023222EDE007DDEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3RT2M88J5;
+				INFOPLIST_FILE = NikaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nika;
+			};
+			name = Debug;
+		};
+		9344F5C123222EDE007DDEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3RT2M88J5;
+				INFOPLIST_FILE = NikaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nika;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9344F58C23222EDA007DDEBE /* Build configuration list for PBXProject "Nika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9344F5B723222EDE007DDEBE /* Debug */,
+				9344F5B823222EDE007DDEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9344F5B923222EDE007DDEBE /* Build configuration list for PBXNativeTarget "Nika" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9344F5BA23222EDE007DDEBE /* Debug */,
+				9344F5BB23222EDE007DDEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9344F5BC23222EDE007DDEBE /* Build configuration list for PBXNativeTarget "NikaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9344F5BD23222EDE007DDEBE /* Debug */,
+				9344F5BE23222EDE007DDEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9344F5BF23222EDE007DDEBE /* Build configuration list for PBXNativeTarget "NikaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9344F5C023222EDE007DDEBE /* Debug */,
+				9344F5C123222EDE007DDEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9344F58923222EDA007DDEBE /* Project object */;
+}
