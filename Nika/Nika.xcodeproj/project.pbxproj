@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9108AE572E7E378030013B25 /* Pods_NikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393F140D21B29923EC1C0EEC /* Pods_NikaTests.framework */; };
 		930F29792327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F29782327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift */; };
 		9327D1D123269BE0002F8B15 /* NikaExplorectrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1D023269BE0002F8B15 /* NikaExplorectrlr.swift */; };
 		9327D1D42326A013002F8B15 /* NikaExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1D32326A013002F8B15 /* NikaExploreCell.swift */; };
@@ -42,6 +43,8 @@
 		93C34FA3232F933E00D2B980 /* EditProfileViewCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C34F9C232F933E00D2B980 /* EditProfileViewCtrlr.swift */; };
 		93C9814C2328D8F1006531AD /* NikaBlockedUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9814B2328D8F1006531AD /* NikaBlockedUserCell.swift */; };
 		93C9814E2328E43B006531AD /* NikaLocationPermissionCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9814D2328E43B006531AD /* NikaLocationPermissionCtrlr.swift */; };
+		E3BB5BA74DBCE1D0A8AAFC99 /* Pods_NikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BC7E9333995E41413794D2 /* Pods_NikaUITests.framework */; };
+		EF5C4CD663216B5E6D603F84 /* Pods_Nika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC9BF38497D91320C32BEAD /* Pods_Nika.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09AD13E707E0703CC6916B1B /* Pods-NikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NikaTests/Pods-NikaTests.release.xcconfig"; sourceTree = "<group>"; };
+		393F140D21B29923EC1C0EEC /* Pods_NikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582CBB06A1192D09E2450D7F /* Pods-NikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NikaUITests/Pods-NikaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61D1001BC9E824701BCFDCDB /* Pods-NikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NikaUITests/Pods-NikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		66BC7E9333995E41413794D2 /* Pods_NikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930F29782327C59F002AABF8 /* NikaBlockedUsersCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaBlockedUsersCtrlr.swift; sourceTree = "<group>"; };
 		9327D1D023269BE0002F8B15 /* NikaExplorectrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaExplorectrlr.swift; sourceTree = "<group>"; };
 		9327D1D32326A013002F8B15 /* NikaExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaExploreCell.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 		93C34F9C232F933E00D2B980 /* EditProfileViewCtrlr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewCtrlr.swift; sourceTree = "<group>"; };
 		93C9814B2328D8F1006531AD /* NikaBlockedUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaBlockedUserCell.swift; sourceTree = "<group>"; };
 		93C9814D2328E43B006531AD /* NikaLocationPermissionCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaLocationPermissionCtrlr.swift; sourceTree = "<group>"; };
+		98F07BF9BB1C396534199C01 /* Pods-Nika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nika.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nika/Pods-Nika.release.xcconfig"; sourceTree = "<group>"; };
+		A70142FCEAD5CA2BA014DEB5 /* Pods-Nika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nika.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nika/Pods-Nika.debug.xcconfig"; sourceTree = "<group>"; };
+		DEC9BF38497D91320C32BEAD /* Pods_Nika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FCA216B2681E296A35F1E2 /* Pods-NikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NikaTests/Pods-NikaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5C4CD663216B5E6D603F84 /* Pods_Nika.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9108AE572E7E378030013B25 /* Pods_NikaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,12 +138,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3BB5BA74DBCE1D0A8AAFC99 /* Pods_NikaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B3BF3774596210A6B9B6373 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9BF38497D91320C32BEAD /* Pods_Nika.framework */,
+				393F140D21B29923EC1C0EEC /* Pods_NikaTests.framework */,
+				66BC7E9333995E41413794D2 /* Pods_NikaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9327D1D223269FF3002F8B15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +173,8 @@
 				9344F5A823222EDE007DDEBE /* NikaTests */,
 				9344F5B323222EDE007DDEBE /* NikaUITests */,
 				9344F59223222EDA007DDEBE /* Products */,
+				989063CBB10FC97FCAD32551 /* Pods */,
+				2B3BF3774596210A6B9B6373 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +260,19 @@
 			path = UserProfile;
 			sourceTree = "<group>";
 		};
+		989063CBB10FC97FCAD32551 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A70142FCEAD5CA2BA014DEB5 /* Pods-Nika.debug.xcconfig */,
+				98F07BF9BB1C396534199C01 /* Pods-Nika.release.xcconfig */,
+				F5FCA216B2681E296A35F1E2 /* Pods-NikaTests.debug.xcconfig */,
+				09AD13E707E0703CC6916B1B /* Pods-NikaTests.release.xcconfig */,
+				61D1001BC9E824701BCFDCDB /* Pods-NikaUITests.debug.xcconfig */,
+				582CBB06A1192D09E2450D7F /* Pods-NikaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9344F5B923222EDE007DDEBE /* Build configuration list for PBXNativeTarget "Nika" */;
 			buildPhases = (
+				BA56C708354BF76944C6287C /* [CP] Check Pods Manifest.lock */,
 				9344F58D23222EDA007DDEBE /* Sources */,
 				9344F58E23222EDA007DDEBE /* Frameworks */,
 				9344F58F23222EDA007DDEBE /* Resources */,
@@ -257,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9344F5BC23222EDE007DDEBE /* Build configuration list for PBXNativeTarget "NikaTests" */;
 			buildPhases = (
+				2BE8201E17A9550879070988 /* [CP] Check Pods Manifest.lock */,
 				9344F5A123222EDE007DDEBE /* Sources */,
 				9344F5A223222EDE007DDEBE /* Frameworks */,
 				9344F5A323222EDE007DDEBE /* Resources */,
@@ -275,6 +317,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9344F5BF23222EDE007DDEBE /* Build configuration list for PBXNativeTarget "NikaUITests" */;
 			buildPhases = (
+				1F13D18F8754A0E26493D600 /* [CP] Check Pods Manifest.lock */,
 				9344F5AC23222EDE007DDEBE /* Sources */,
 				9344F5AD23222EDE007DDEBE /* Frameworks */,
 				9344F5AE23222EDE007DDEBE /* Resources */,
@@ -360,6 +403,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F13D18F8754A0E26493D600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NikaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BE8201E17A9550879070988 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NikaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA56C708354BF76944C6287C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nika-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9344F58D23222EDA007DDEBE /* Sources */ = {
@@ -566,6 +666,7 @@
 		};
 		9344F5BA23222EDE007DDEBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A70142FCEAD5CA2BA014DEB5 /* Pods-Nika.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -585,6 +686,7 @@
 		};
 		9344F5BB23222EDE007DDEBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F07BF9BB1C396534199C01 /* Pods-Nika.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -604,6 +706,7 @@
 		};
 		9344F5BD23222EDE007DDEBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5FCA216B2681E296A35F1E2 /* Pods-NikaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +728,7 @@
 		};
 		9344F5BE23222EDE007DDEBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AD13E707E0703CC6916B1B /* Pods-NikaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +750,7 @@
 		};
 		9344F5C023222EDE007DDEBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D1001BC9E824701BCFDCDB /* Pods-NikaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +771,7 @@
 		};
 		9344F5C123222EDE007DDEBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582CBB06A1192D09E2450D7F /* Pods-NikaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
