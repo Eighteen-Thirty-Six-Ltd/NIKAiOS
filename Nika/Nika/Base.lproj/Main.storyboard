@@ -1658,7 +1658,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBM-Sl-PZZ">
-                                        <rect key="frame" x="15" y="43" width="20" height="22"/>
+                                        <rect key="frame" x="15" y="43" width="16" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backTapped:" destination="Mw6-tY-QkB" eventType="touchUpInside" id="VfV-Lw-CTj"/>
