@@ -474,6 +474,7 @@
 		9327D1DA2326D3C8002F8B15 /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9327D1D92326D3C8002F8B15 /* Chats.storyboard */; };
 		9327D1DC2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327D1DB2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift */; };
 		932908062329082600F79105 /* NikaProfileDetailCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932908052329082600F79105 /* NikaProfileDetailCtrlr.swift */; };
+		932D08C9233389870009423F /* GoogleService-InfoBasavaraj.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932D08C8233389860009423F /* GoogleService-InfoBasavaraj.plist */; };
 		9344F59723222EDA007DDEBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F59623222EDA007DDEBE /* ViewController.swift */; };
 		9344F59A23222EDA007DDEBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9344F59823222EDA007DDEBE /* Main.storyboard */; };
 		9344F59C23222EDE007DDEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9344F59B23222EDE007DDEBE /* Assets.xcassets */; };
@@ -1037,6 +1038,7 @@
 		9327D1D92326D3C8002F8B15 /* Chats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chats.storyboard; sourceTree = "<group>"; };
 		9327D1DB2326D3F3002F8B15 /* NikaChatsViewCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaChatsViewCtrlr.swift; sourceTree = "<group>"; };
 		932908052329082600F79105 /* NikaProfileDetailCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaProfileDetailCtrlr.swift; sourceTree = "<group>"; };
+		932D08C8233389860009423F /* GoogleService-InfoBasavaraj.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-InfoBasavaraj.plist"; sourceTree = "<group>"; };
 		9344F59123222EDA007DDEBE /* Nika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9344F59623222EDA007DDEBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9344F59923222EDA007DDEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -2602,6 +2604,7 @@
 			isa = PBXGroup;
 			children = (
 				473E1E5A2332BA1F0093066E /* GoogleService-Info.plist */,
+				932D08C8233389860009423F /* GoogleService-InfoBasavaraj.plist */,
 				473E1E5C2332BA2E0093066E /* Messenger */,
 				93C34F87232F92E100D2B980 /* UserProfile */,
 				9327D1D223269FF3002F8B15 /* Views */,
@@ -2977,6 +2980,7 @@
 				473E21D12332BA2F0093066E /* profile_callvideo@2x.png in Resources */,
 				473E21B12332BA2F0093066E /* chat_location@2x.png in Resources */,
 				473E21302332BA2F0093066E /* CallVideoView.xib in Resources */,
+				932D08C9233389870009423F /* GoogleService-InfoBasavaraj.plist in Resources */,
 				473E21D32332BA2F0093066E /* callvideo_mute2@2x.png in Resources */,
 				473E22012332BA2F0093066E /* stickerlocal51@2x.png in Resources */,
 				473E221F2332BA2F0093066E /* stickerlocal29@2x.png in Resources */,
@@ -3131,7 +3135,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -3140,7 +3144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1F13D18F8754A0E26493D600 /* [CP] Check Pods Manifest.lock */ = {
@@ -3185,7 +3189,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
@@ -3246,7 +3250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA56C708354BF76944C6287C /* [CP] Check Pods Manifest.lock */ = {
@@ -3637,7 +3641,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/suttroogunyoginkumar/Documents/iOS/Business/v4/NIKAiOS/Nika/Nika/Messenger/app-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Messenger/app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3658,7 +3662,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.1836.Nika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/suttroogunyoginkumar/Documents/iOS/Business/v4/NIKAiOS/Nika/Nika/Messenger/app-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Messenger/app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

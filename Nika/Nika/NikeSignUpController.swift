@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class NikeSignUpController: UIViewController {
 
@@ -41,6 +42,8 @@ class NikeSignUpController: UIViewController {
     @IBOutlet weak var LBL_SignUpMode: UILabel!
     @IBOutlet weak var BTN_SignUpModeLogin: UIButton!
     
+    var isSignInMode = true
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,8 @@ class NikeSignUpController: UIViewController {
         BTN_Sign.addShadow()
         
         self.btnLoginModeSignUpTapped(BTN_LoginModeSignUp)
+        
+        self.isSignInMode = false
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {
@@ -78,8 +83,79 @@ class NikeSignUpController: UIViewController {
     
     @IBAction func btnSignTapped(_ sender: UIButton) {
         
-        let baseNav = self.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
-        self.present(baseNav!, animated: true, completion: nil)
+        if(self.validateInputs())
+        {
+            let loadingNotification = MBProgressHUD.showAdded(to: view, animated: true)
+            loadingNotification.mode = MBProgressHUDMode.indeterminate
+            loadingNotification.label.text = "Loading"
+            
+            if(self.isSignInMode)
+            {
+                Auth.auth().signIn(withEmail: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { [weak self] user, error in
+                    guard let strongSelf = self else { return }
+                    
+                    MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
+
+                    if (error == nil)
+                    {
+                        let baseNav = self?.storyboard?.instantiateViewController(withIdentifier: "NikaHomeCtrlr")
+                        strongSelf.present(baseNav!, animated: true, completion: nil)
+                    }
+                    else
+                    {
+                        let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                                
+                            }}))
+                        strongSelf.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+            else
+            {
+                Auth.auth().createUser(withEmail: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { [weak self] user, error in
+                    
+                    guard let strongSelf = self else { return }
+
+                    MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
+
+                    if (error == nil)
+                    {
+                        let baseNav = strongSelf.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
+                        strongSelf.present(baseNav!, animated: true, completion: nil)
+
+                    }
+                    else
+                    {
+                        let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                                
+                            }}))
+                        strongSelf.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func btnFacebbokTapped(_ sender: UIButton) {
@@ -100,6 +176,11 @@ class NikeSignUpController: UIViewController {
         LBL_Content.text = "Register on NikaMatch by choosing a valid Email and carefully choosing your password"
         
         BTN_Sign.setTitle("SIGN UP", for: .normal)
+        
+        self.isSignInMode = false
+        
+        LBL_ValidationEmail.text = ""
+        LBL_ValidationPassword.text = ""
     }
     
     @IBAction func btnSignUpModeLoginTapped(_ sender: UIButton) {
@@ -117,6 +198,38 @@ class NikeSignUpController: UIViewController {
         LBL_Content.text = "Login using your registered NikaMatch Email and Password"
         
         BTN_Sign.setTitle("SIGN IN", for: .normal)
+        
+        self.isSignInMode = true
+        
+        LBL_ValidationEmail.text = ""
+        LBL_ValidationPassword.text = ""
+    }
+    
+    func validateInputs() -> Bool {
+        
+        var isValid = true
+        
+        if (TEXTFIELD_Email.text!.count == 0)
+        {
+            LBL_ValidationEmail.text = "Please enter the Email"
+            isValid = false
+        }
+        else
+        {
+            LBL_ValidationEmail.text = ""
+        }
+        
+        if (TEXTFIELD_Password.text!.count == 0)
+        {
+            LBL_ValidationPassword.text = "Please enter the password"
+            isValid = false
+        }
+        else
+        {
+            LBL_ValidationPassword.text = ""
+        }
+        
+        return isValid
     }
     
     @IBAction func btnForgotPasswordTapped(_ sender: UIButton) {

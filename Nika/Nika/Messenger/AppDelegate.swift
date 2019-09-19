@@ -33,7 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINServiceDelegate, SINCa
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //        Firebase
-        FirebaseApp.configure()
+        let filePath = Bundle.main.path(forResource: "GoogleService-InfoBasavaraj", ofType: "plist")!
+        let options = FirebaseOptions(contentsOfFile: filePath)
+        FirebaseApp.configure(options: options!)
+        
         Database.database().isPersistenceEnabled = false
         
         //        let db = Firestore.firestore()
