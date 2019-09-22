@@ -10,6 +10,9 @@ import UIKit
 
 class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var LBL_Step5: UILabel!
+    @IBOutlet weak var LBL_Header: UILabel!
+    
     @IBOutlet weak var BTN_Next: UIButton!
     @IBOutlet weak var VIEW_ProfilePic: UIView!
     @IBOutlet weak var VIEW_Pict1: UIView!
@@ -39,6 +42,22 @@ class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegat
         VIEW_Pict3.addCornerRadius(cornerRadius: 10.0)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if (self.isEditMode)
+        {
+            LBL_Header.text = "Edit Profile"
+            LBL_Step5.isHidden = true
+            
+            BTN_Next.setTitle("SUBMIT", for: .normal)
+        }
+        else
+        {
+            LBL_Header.text = "Create Profile"
+            BTN_Next.setTitle("NEXT", for: .normal)
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -51,9 +70,35 @@ class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegat
     */
     @IBAction func nextTapped(_ sender: UIButton) {
         
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let baseNav = mainStoryboard.instantiateViewController(withIdentifier: "NikaLocationPermissionCtrlr")
-        self.present(baseNav, animated: true, completion: nil)
+        if (self.isEditMode)
+        {
+            NikaFirebaseManager.sharedManager.updateUserProfile(userProfile: NikaDataManager.sharedDataManager.userProf)
+            
+            let alert = UIAlertController(title: "Alert", message: "Successfully updated", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    self.dismiss(animated: true, completion: nil)
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                    
+                }}))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else
+        {
+            NikaFirebaseManager.sharedManager.addUserProfile(userProfile: NikaDataManager.sharedDataManager.userProf)
+            
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let baseNav = mainStoryboard.instantiateViewController(withIdentifier: "NikaLocationPermissionCtrlr")
+            self.present(baseNav, animated: true, completion: nil)
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {

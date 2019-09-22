@@ -381,7 +381,6 @@
                                                 <state key="normal" title="NEXT"/>
                                                 <connections>
                                                     <action selector="nextTapped:" destination="zUG-SB-I6D" eventType="touchUpInside" id="c3q-da-SG5"/>
-                                                    <segue destination="Z7I-Mu-nfA" kind="show" id="1tu-Ou-XU7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -448,11 +447,20 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="BTN_Next" destination="tM0-Xc-YrA" id="ySi-2a-7ep"/>
+                        <outlet property="LBL_Header" destination="aes-E9-nB9" id="yZf-wM-dNq"/>
+                        <outlet property="LBL_Step1" destination="dXN-g4-lXp" id="cC2-K8-V00"/>
+                        <outlet property="TEXT_FirstName" destination="vMD-UN-ZnG" id="4fn-NX-hFJ"/>
+                        <outlet property="TEXT_Gender" destination="GAJ-n0-3lq" id="8uz-Wj-Y3A"/>
+                        <outlet property="TEXT_Height" destination="fn9-Ln-apO" id="Bq2-ng-il2"/>
+                        <outlet property="TEXT_LastName" destination="6Dp-XJ-O4f" id="JBW-Q3-Sfd"/>
+                        <outlet property="TEXT_Location" destination="KUQ-Jb-jjZ" id="rEj-qO-XPA"/>
+                        <outlet property="TEXT_MaritalStatus" destination="gir-Mp-Y5Y" id="Q4g-LG-cdI"/>
+                        <outlet property="TEXT_dob" destination="6yd-2j-4sA" id="SW8-u3-dyT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3x-Hi-3nb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5908.6956521739139" y="130.58035714285714"/>
+            <point key="canvasLocation" x="5642" y="131"/>
         </scene>
         <!--Create Profile Edu Info Ctrlr-->
         <scene sceneID="ylh-qE-Iy5">
@@ -699,7 +707,6 @@
                                                 <state key="normal" title="NEXT"/>
                                                 <connections>
                                                     <action selector="nextTapped:" destination="Z7I-Mu-nfA" eventType="touchUpInside" id="yxg-uM-fC8"/>
-                                                    <segue destination="Xgs-NL-f5C" kind="show" id="cAr-ff-AxY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -756,11 +763,17 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="BTN_Next" destination="gTf-6v-fq0" id="McB-mq-91P"/>
+                        <outlet property="LBL_Header" destination="LZt-yp-d1U" id="lma-f3-Sah"/>
+                        <outlet property="LBL_Step2" destination="hKm-f1-f7v" id="aUA-EJ-1db"/>
+                        <outlet property="TEXT_Company" destination="obH-bf-mZn" id="fyx-fH-8Dq"/>
+                        <outlet property="TEXT_JobTitle" destination="OsD-Vr-00G" id="UgG-tA-K8J"/>
+                        <outlet property="TEXT_Profession" destination="Feh-Hf-zWM" id="QUJ-3w-YWp"/>
+                        <outlet property="TEXT_Qualification" destination="ViL-El-YIH" id="vka-u5-pb8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWc-Je-NNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6568.115942028986" y="130.58035714285714"/>
+            <point key="canvasLocation" x="6316" y="131"/>
         </scene>
         <!--Create Profile Language Info Ctrlr-->
         <scene sceneID="iyD-Mn-eBD">
@@ -971,7 +984,6 @@
                                                 <state key="normal" title="NEXT"/>
                                                 <connections>
                                                     <action selector="nextTapped:" destination="ezS-G7-4iK" eventType="touchUpInside" id="1T6-Fm-X3r"/>
-                                                    <segue destination="R7a-ja-Epi" kind="show" id="KL3-AT-gJt"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1025,6 +1037,11 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="BTN_Next" destination="LKT-RN-SWW" id="U9U-bV-z5v"/>
+                        <outlet property="LBL_Header" destination="kR3-Fx-CqC" id="95n-8y-VsL"/>
+                        <outlet property="LBL_Step4" destination="1G3-HA-Wvm" id="lcA-p1-eZy"/>
+                        <outlet property="TEXT_Country" destination="heL-Yu-Kev" id="qlT-9y-y4V"/>
+                        <outlet property="TEXT_Ethnicith" destination="kaG-QT-1Jf" id="5it-44-B91"/>
+                        <outlet property="TEXT_Language" destination="GlC-e8-lTv" id="wWc-Nx-Npo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uq-Lm-q3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1492,6 +1509,8 @@
                         <outlet property="IMAGE_Pict2" destination="Emt-Aa-M8h" id="UtB-zj-OhC"/>
                         <outlet property="IMAGE_Pict3" destination="vj7-CW-z5b" id="991-Ev-Fnm"/>
                         <outlet property="IMAGE_ProfilePic" destination="Nfh-XJ-BWz" id="tAN-84-ho9"/>
+                        <outlet property="LBL_Header" destination="4N8-Pt-7ji" id="8QY-ZC-VNG"/>
+                        <outlet property="LBL_Step5" destination="Sc8-iB-tsu" id="zzK-x3-qab"/>
                         <outlet property="VIEW_Pict1" destination="1pA-lM-zdP" id="iii-R8-fxy"/>
                         <outlet property="VIEW_Pict2" destination="3pC-jV-DXl" id="kCD-8l-EbB"/>
                         <outlet property="VIEW_Pict3" destination="HOl-4D-jgR" id="cjE-T4-EVk"/>
@@ -2048,6 +2067,9 @@
                                                         <rect key="frame" x="315" y="9.5" width="51" height="31"/>
                                                         <color key="tintColor" red="0.47058823529999999" green="0.21960784310000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="onTintColor" red="0.47058823529999999" green="0.21960784310000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="alcoholTapped:" destination="Xgs-NL-f5C" eventType="valueChanged" id="Qm3-iL-ubo"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2086,6 +2108,9 @@
                                                         <rect key="frame" x="315" y="9.5" width="51" height="31"/>
                                                         <color key="tintColor" red="0.47058823529999999" green="0.21960784310000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="onTintColor" red="0.47058823529999999" green="0.21960784310000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="halalTapped:" destination="Xgs-NL-f5C" eventType="valueChanged" id="oZj-I5-sfJ"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2121,6 +2146,9 @@
                                                         <rect key="frame" x="315" y="9.5" width="51" height="31"/>
                                                         <color key="tintColor" red="0.47058823529999999" green="0.21960784310000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="onTintColor" red="0.47058823529999999" green="0.21960784310000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <connections>
+                                                            <action selector="smokeTapped:" destination="Xgs-NL-f5C" eventType="valueChanged" id="IDt-jg-CEL"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2146,7 +2174,6 @@
                                                 <state key="normal" title="NEXT"/>
                                                 <connections>
                                                     <action selector="nextTapped:" destination="Xgs-NL-f5C" eventType="touchUpInside" id="T0r-8a-3x7"/>
-                                                    <segue destination="ezS-G7-4iK" kind="show" id="kxY-7J-u3O"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9e-59-muY">
@@ -2447,6 +2474,11 @@
                         <outlet property="BTN_Sunni" destination="MgK-mo-wEP" id="cQI-hw-3lS"/>
                         <outlet property="BTN_Usual" destination="Oal-x3-5yB" id="5od-R7-JRO"/>
                         <outlet property="BTN_VeryReligious" destination="8ip-E7-lFz" id="zG3-Dn-BQz"/>
+                        <outlet property="LBL_Header" destination="lMl-7h-QZS" id="z0d-SD-Znd"/>
+                        <outlet property="LBL_Step3" destination="Mbf-eC-Izf" id="BJ4-c8-qQw"/>
+                        <outlet property="SWITCH_Alcohol" destination="lxI-wQ-Gsi" id="dSq-T8-EeK"/>
+                        <outlet property="SWITCH_Halal" destination="6P2-6Z-5bg" id="D2f-PJ-Bje"/>
+                        <outlet property="SWITCH_Smoke" destination="eId-NN-ayT" id="BvC-q8-kin"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVI-av-Rf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
