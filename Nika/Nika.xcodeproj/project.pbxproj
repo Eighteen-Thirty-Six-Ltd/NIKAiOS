@@ -3135,7 +3135,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -3144,7 +3144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1F13D18F8754A0E26493D600 /* [CP] Check Pods Manifest.lock */ = {
@@ -3189,7 +3189,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
@@ -3250,7 +3250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA56C708354BF76944C6287C /* [CP] Check Pods Manifest.lock */ = {
