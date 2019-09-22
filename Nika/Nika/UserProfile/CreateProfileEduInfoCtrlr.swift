@@ -9,7 +9,12 @@
 import UIKit
 
 class CreateProfileEduInfoCtrlr: UIViewController {
-
+    
+    @IBOutlet weak var qualificationTxtFld: UITextField!
+    @IBOutlet weak var professionTxtFld: UITextField!
+    @IBOutlet weak var jobTitleTxtFld: UITextField!
+    @IBOutlet weak var companyTxtFld: UITextField!
+    
     @IBOutlet weak var BTN_Next: UIButton!
     var isEditMode = false
     
@@ -32,6 +37,18 @@ class CreateProfileEduInfoCtrlr: UIViewController {
     */
 
     @IBAction func nextTapped(_ sender: UIButton) {
+        let user = FUser.currentUser()
+        user[FUSER_QUALIFICATION] = qualificationTxtFld.text
+        user[FUSER_PROFESSION] = professionTxtFld.text
+        user[FUSER_JOB_TITLE] = professionTxtFld.text
+        user[FUSER_COMPANY] = companyTxtFld.text
+        
+        user.saveInBackground { (error) in
+            if error == nil {
+                let createProfileStep2Nav = self.storyboard?.instantiateViewController(withIdentifier: "CreateProfileReligiousInfoCtrlr")
+                self.present(createProfileStep2Nav!, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {

@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateProfileBasicCtrlr: UIViewController {
 
     @IBOutlet weak var BTN_Next: UIButton!
+    
+    @IBOutlet weak var firstNameTxtFld: UITextField!
+    @IBOutlet weak var lastNameTxtFld: UITextField!
+    @IBOutlet weak var locationTxtFld: UITextField!
+    @IBOutlet weak var dobTxtFld: UITextField!
+    @IBOutlet weak var genderTxtFld: UITextField!
+    @IBOutlet weak var heightTxtFld: UITextField!
+    @IBOutlet weak var maritalStatusTxtFld: UITextField!
+    
     var isEditMode = false
     
     override func viewDidLoad() {
@@ -32,6 +42,20 @@ class CreateProfileBasicCtrlr: UIViewController {
     */
 
     @IBAction func nextTapped(_ sender: UIButton) {
+        let user = FUser.currentUser()
+        user[FUSER_FIRSTNAME] = firstNameTxtFld.text
+        user[FUSER_LASTNAME] = lastNameTxtFld.text
+        user[FUSER_LOCATION] = locationTxtFld.text
+        user[FUSER_GENDER] = genderTxtFld.text
+        user[FUSER_HEIGHT] = heightTxtFld.text
+        user[FUSER_MARITAL_STATUS] = maritalStatusTxtFld.text
+        
+        user.saveInBackground { (error) in
+            if error == nil {
+                let createProfileStep2Nav = self.storyboard?.instantiateViewController(withIdentifier: "CreateProfileEduInfoCtrlr")
+                self.present(createProfileStep2Nav!, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {

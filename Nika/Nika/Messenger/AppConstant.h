@@ -51,6 +51,11 @@
 #define		KEEPMEDIA_MONTH						2
 #define		KEEPMEDIA_FOREVER					3
 //---------------------------------------------------------------------------------
+#define     MAXAGE                              35
+#define     MINAGE                              18
+#define     AGE                                 0
+#define     MAXDISTANCE                         35
+//---------------------------------------------------------------------------------
 #define		DEL_ACCOUNT_NONE					1
 #define		DEL_ACCOUNT_ONE						2
 #define		DEL_ACCOUNT_ALL						3
@@ -205,38 +210,72 @@
 //---------------------------------------------------------------------------------
 #define		FTYPING_PATH						@"Typing"				//	Path name
 //---------------------------------------------------------------------------------
-#define		FUSER_PATH							@"User"					//	Path name
-#define		FUSER_OBJECTID						@"objectId"				//	String
+#define     FUSER_PATH                          @"User"                 //    Path name
+#define     FUSER_OBJECTID                      @"objectId"             //    String
 
-#define		FUSER_EMAIL							@"email"				//	String
-#define		FUSER_PHONE							@"phone"				//	String
+#define     FUSER_EMAIL                         @"email"                //    String
+#define     FUSER_PHONE                         @"phone"                //    String
 
-#define		FUSER_FIRSTNAME						@"firstname"			//	String
-#define		FUSER_LASTNAME						@"lastname"				//	String
-#define		FUSER_FULLNAME						@"fullname"				//	String
-#define		FUSER_COUNTRY						@"country"				//	String
-#define		FUSER_LOCATION						@"location"				//	String
-#define		FUSER_STATUS						@"status"				//	String
+#define     FUSER_GENDER                        @"gender"               //  String
+#define     FUSER_INTERESTEDIN                  @"interestedIn"         //  String
+#define     FUSER_BIO                           @"bio"                  //  String
+#define     FUSER_PROFESSION                    @"profession"           //  String
+#define     FUSER_DOB                           @"dob"                  //  String
+#define     FUSER_IMGURL1                       @"imgUrl1"              //  String
+#define     FUSER_IMGURL2                       @"imgUrl2"              //  String
+#define     FUSER_IMGURL3                       @"imgUrl3"              //  String
+#define     FUSER_IMGURL3                       @"imgUrl3"              //  String
 
-#define		FUSER_PICTURE						@"picture"				//	String
-#define		FUSER_THUMBNAIL						@"thumbnail"			//	String
+#define     FUSER_MARITAL_STATUS                @"marital_status"       //    String
+#define     FUSER_HEIGHT                        @"height"               //  String
+#define     FUSER_QUALIFICATION                 @"qualification"        //  String
+#define     FUSER_JOB_TITLE                     @"jobTitle"             //  String
+#define     FUSER_COMPANY                       @"compnay"              //  String
+#define     FUSER_SECT                          @"sect"                 //  String
+#define     FUSER_RELIGIOUS                     @"religious"            //  String
+#define     FUSER_PRAYER                        @"prayer"               //  String
+#define     FUSER_SEEKING_MARRIAGE              @"seekingMarriage"      //  String
+#define     FUSER_DRINKER                       @"drinker"              //  String
+#define     FUSER_HALALL                        @"halall"               //  String
+#define     FUSER_SMOKER                        @"smoker"               //  String
+#define     FUSER_LANGUAGE                      @"language"             //  String
+#define     FUSER_ETHNICITY                     @"ethnicity"            //  String
+#define     FUSER_ORIGIN                        @"origin"               //  String
 
-#define		FUSER_KEEPMEDIA						@"keepMedia"			//	Number
-#define		FUSER_NETWORKIMAGE					@"networkImage"			//	Number
-#define		FUSER_NETWORKVIDEO					@"networkVideo"			//	Number
-#define		FUSER_NETWORKAUDIO					@"networkAudio"			//	Number
-#define		FUSER_WALLPAPER						@"wallpaper"			//	String
+#define     FUSER_MAXSEEKINGAGE                 @"maxSeekingAge"        //  Number
+#define     FUSER_MINSEEKINGAGE                 @"minSeekingAge"        //  Number
+#define     FUSER_AGE                           @"age"                  //  Number
+#define     FUSER_MAXSEEKINGDISTANCE            @"maxSeekingDistance"   //  Number
 
-#define		FUSER_LOGINMETHOD					@"loginMethod"			//	String
-#define		FUSER_ONESIGNALID					@"oneSignalId"			//	String
+#define     FUSER_LONGITUDE                     @"longitude"            //  Number
+#define     FUSER_LATITUDE                      @"latitude"             //  Number
 
-#define		FUSER_LASTACTIVE					@"lastActive"			//	Timestamp
-#define		FUSER_LASTTERMINATE					@"lastTerminate"		//	Timestamp
+#define     FUSER_FIRSTNAME                     @"firstname"            //    String
+#define     FUSER_LASTNAME                      @"lastname"             //    String
+#define     FUSER_FULLNAME                      @"fullName"             //    String
+#define     FUSER_COUNTRY                       @"country"              //    String
+#define     FUSER_LOCATION                      @"location"             //    String
+#define     FUSER_STATUS                        @"status"               //    String
 
-#define		FUSER_LINKEDIDS						@"linkedIds"			//	Dictionary
+#define     FUSER_PICTURE                       @"picture"              //    String
+#define     FUSER_THUMBNAIL                     @"thumbnail"            //    String
 
-#define		FUSER_CREATEDAT						@"createdAt"			//	Timestamp
-#define		FUSER_UPDATEDAT						@"updatedAt"			//	Timestamp
+#define     FUSER_KEEPMEDIA                     @"keepMedia"            //    Number
+#define     FUSER_NETWORKIMAGE                  @"networkImage"         //    Number
+#define     FUSER_NETWORKVIDEO                  @"networkVideo"         //    Number
+#define     FUSER_NETWORKAUDIO                  @"networkAudio"         //    Number
+#define     FUSER_WALLPAPER                     @"wallpaper"            //    String
+
+#define     FUSER_LOGINMETHOD                   @"loginMethod"          //    String
+#define     FUSER_ONESIGNALID                   @"oneSignalId"          //    String
+
+#define     FUSER_LASTACTIVE                    @"lastActive"           //    Timestamp
+#define     FUSER_LASTTERMINATE                 @"lastTerminate"        //    Timestamp
+
+#define     FUSER_LINKEDIDS                     @"linkedIds"            //    Dictionary
+
+#define     FUSER_CREATEDAT                     @"createdAt"            //    Timestamp
+#define     FUSER_UPDATEDAT                     @"updatedAt"            //    Timestamp
 //---------------------------------------------------------------------------------
 #define		FUSERSTATUS_PATH					@"UserStatus"			//	Path name
 #define		FUSERSTATUS_OBJECTID				@"objectId"				//	String

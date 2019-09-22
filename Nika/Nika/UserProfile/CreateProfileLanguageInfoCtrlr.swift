@@ -13,6 +13,10 @@ class CreateProfileLanguageInfoCtrlr: UIViewController {
     @IBOutlet weak var BTN_Next: UIButton!
     var isEditMode = false
     
+    @IBOutlet weak var languageTxtFld: UITextField!
+    @IBOutlet weak var ethnicityTxtFld: UITextField!
+    @IBOutlet weak var originTxtFld: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +35,17 @@ class CreateProfileLanguageInfoCtrlr: UIViewController {
     }
     */
     @IBAction func nextTapped(_ sender: UIButton) {
+        let user = FUser.currentUser()
+        user[FUSER_LANGUAGE] = languageTxtFld.text
+        user[FUSER_ETHNICITY] = ethnicityTxtFld.text
+        user[FUSER_ORIGIN] = originTxtFld.text
+        
+        user.saveInBackground { (error) in
+            if error == nil {
+                let createProfileStep2Nav = self.storyboard?.instantiateViewController(withIdentifier: "CreateProfilePhotosCtrlr")
+                self.present(createProfileStep2Nav!, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {

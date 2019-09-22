@@ -43,6 +43,21 @@ class CreateProfileReligiousInfoCtrlr: UIViewController {
     }
     
     @IBAction func nextTapped(_ sender: UIButton) {
+        let user = FUser.currentUser()
+        user[FUSER_SECT] = "FUSER_SECT"
+        user[FUSER_RELIGIOUS] = "FUSER_RELIGIOUS"
+        user[FUSER_PRAYER] = "FUSER_PRAYER"
+        user[FUSER_SEEKING_MARRIAGE] = "FUSER_SEEKING_MARRIAGE"
+        user[FUSER_DRINKER] = "FUSER_DRINKER"
+        user[FUSER_HALALL] = "FUSER_HALALL"
+        user[FUSER_SMOKER] = "FUSER_SMOKER"
+        
+        user.saveInBackground { (error) in
+            if error == nil {
+                let createProfileStep2Nav = self.storyboard?.instantiateViewController(withIdentifier: "CreateProfileLanguageInfoCtrlr")
+                self.present(createProfileStep2Nav!, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func btnBackTapped(_ sender: UIButton) {
