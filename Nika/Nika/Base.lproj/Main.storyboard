@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YSY-Rc-YBC">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YSY-Rc-YBC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,7 +52,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmX-Fe-2sx">
-                                        <rect key="frame" x="15" y="43" width="16" height="22"/>
+                                        <rect key="frame" x="15" y="43" width="20" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backTapped:" destination="Kht-nc-U2b" eventType="touchUpInside" id="cqO-l0-R8m"/>
@@ -85,7 +83,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3wQ-QY-O2k" id="9E6-Dk-sK7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="88.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZG-3a-gps">
@@ -106,7 +104,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mildred Henry" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHx-HV-xsf">
-                                                    <rect key="frame" x="135" y="15.5" width="100" height="57.5"/>
+                                                    <rect key="frame" x="135" y="16" width="100" height="57.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="mN2-g7-vmG"/>
                                                     </constraints>
@@ -309,7 +307,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVR-3V-FsO">
-                                                <rect key="frame" x="30" y="40" width="16" height="22"/>
+                                                <rect key="frame" x="30" y="40" width="40" height="40"/>
                                                 <state key="normal" image="back"/>
                                                 <connections>
                                                     <action selector="backTapped:" destination="tCU-iJ-wJS" eventType="touchUpInside" id="dxH-aS-dF6"/>
@@ -1183,7 +1181,7 @@
                                                 <rect key="frame" x="0.0" y="-30" width="414" height="330"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXG-BI-BZ5">
-                                                        <rect key="frame" x="20" y="80" width="16" height="22"/>
+                                                        <rect key="frame" x="20" y="80" width="40" height="40"/>
                                                         <state key="normal" image="back"/>
                                                         <connections>
                                                             <action selector="btnBackTapped:" destination="fGx-r9-5sS" eventType="touchUpInside" id="4m9-4A-HrR"/>
@@ -1233,7 +1231,6 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="CxA-Ew-XG4"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -1286,7 +1283,7 @@
                                                                 <color key="tintColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="floatingPlaceholderEnabled" value="YES"/>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
@@ -1411,7 +1408,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-XV-0FI">
-                                                                <rect key="frame" x="229" y="-5" width="100" height="27"/>
+                                                                <rect key="frame" x="229" y="-5" width="88" height="27"/>
                                                                 <state key="normal">
                                                                     <attributedString key="attributedTitle">
                                                                         <fragment content="Forgot Password">
@@ -1658,7 +1655,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBM-Sl-PZZ">
-                                        <rect key="frame" x="15" y="43" width="16" height="22"/>
+                                        <rect key="frame" x="15" y="43" width="20" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backTapped:" destination="Mw6-tY-QkB" eventType="touchUpInside" id="VfV-Lw-CTj"/>
@@ -1722,7 +1719,7 @@ The exact contents of a certain privacy policy will depend upon the applicable l
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fS-Qr-OlW">
-                                        <rect key="frame" x="15" y="43" width="16" height="22"/>
+                                        <rect key="frame" x="15" y="43" width="20" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backTapped:" destination="Kht-nc-U2b" eventType="touchUpInside" id="zos-V5-WWW"/>
@@ -1784,7 +1781,7 @@ The exact contents of a certain privacy policy will depend upon the applicable l
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hds-1N-Ect">
-                                        <rect key="frame" x="15" y="43" width="16" height="22"/>
+                                        <rect key="frame" x="15" y="43" width="20" height="22"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="btnBackTapped:" destination="2qm-tx-0yp" eventType="touchUpInside" id="edX-yE-029"/>
@@ -1848,42 +1845,38 @@ The exact contents of a certain privacy policy will depend upon the applicable l
                                 <rect key="frame" x="84.5" y="211" width="245" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekc-DZ-GEg">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.30397227112676056" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Bf8-ea-xXd"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14q-BK-2NF">
-                                        <rect key="frame" x="65" y="0.0" width="50" height="36"/>
+                                        <rect key="frame" x="65" y="0.0" width="50" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.30397227110000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="EhI-7B-MYJ"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMx-ch-E0f">
-                                        <rect key="frame" x="130" y="0.0" width="50" height="36"/>
+                                        <rect key="frame" x="130" y="0.0" width="50" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.30397227110000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="4ta-6j-tGr"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6c-rg-oZd">
-                                        <rect key="frame" x="195" y="0.0" width="50" height="36"/>
+                                        <rect key="frame" x="195" y="0.0" width="50" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.30397227110000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="UAh-a2-g7y"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -2427,11 +2420,11 @@ The exact contents of a certain privacy policy will depend upon the applicable l
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zut-EB-ZfP" id="FQk-dO-grC">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwp-xa-IxQ">
-                                                    <rect key="frame" x="20" y="20" width="336" height="69.5"/>
+                                                    <rect key="frame" x="20" y="20" width="342.5" height="70"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsProfile" translatesAutoresizingMaskIntoConstraints="NO" id="hVR-bA-eLB">
                                                             <rect key="frame" x="10" y="10" width="50" height="50"/>
@@ -2475,14 +2468,14 @@ The exact contents of a certain privacy policy will depend upon the applicable l
                                         <rect key="frame" x="0.0" y="128" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gmH-b5-5TW" id="jV8-vd-XhA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYS-cr-6Yu">
-                                                    <rect key="frame" x="20" y="20" width="374" height="169.5"/>
+                                                    <rect key="frame" x="20" y="20" width="374" height="170"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogOut" translatesAutoresizingMaskIntoConstraints="NO" id="QWO-Il-syP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="169.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="170"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
