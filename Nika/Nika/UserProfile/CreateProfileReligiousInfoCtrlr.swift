@@ -131,10 +131,6 @@ class CreateProfileReligiousInfoCtrlr: UIViewController {
                 self.notDecidedTapped(BTN_NotDecided)
             }
             
-            self.SWITCH_Alcohol.isOn = false
-            self.SWITCH_Halal.isOn = false
-            self.SWITCH_Smoke.isOn = false
-            
             if(NikaDataManager.sharedDataManager.userProf.alcohol == "YES")
             {
                 self.SWITCH_Alcohol.isOn = true
@@ -152,6 +148,10 @@ class CreateProfileReligiousInfoCtrlr: UIViewController {
         }
         else
         {
+            self.SWITCH_Alcohol.isOn = false
+            self.SWITCH_Halal.isOn = false
+            self.SWITCH_Smoke.isOn = false
+            
             LBL_Header.text = "Create Profile"
             BTN_Next.setTitle("NEXT", for: .normal)
         }

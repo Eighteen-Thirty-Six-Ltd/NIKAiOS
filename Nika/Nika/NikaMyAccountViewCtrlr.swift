@@ -29,10 +29,10 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         
         var cell : UITableViewCell = UITableViewCell()
         
-        let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
-        
         if (0 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsProfile")
             nikaExplor.LBL_Settings.text = "Edit Profile"
             
@@ -40,6 +40,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (1 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsBlock")
             nikaExplor.LBL_Settings.text = "Blocked Users"
             
@@ -47,6 +49,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (2 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsChaperone")
             nikaExplor.LBL_Settings.text = "Chaperone"
             
@@ -54,6 +58,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (3 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsBlog")
             nikaExplor.LBL_Settings.text = "Nika Match Blog"
             
@@ -61,6 +67,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (4 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsCache")
             nikaExplor.LBL_Settings.text = "Clear Cache"
             
@@ -68,6 +76,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (5 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsChangePwd")
             nikaExplor.LBL_Settings.text = "Change Password"
             
@@ -75,6 +85,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (6 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsTermsOfService")
             nikaExplor.LBL_Settings.text = "Terms of Service"
             
@@ -82,6 +94,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (7 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsPrivacyPolicy")
             nikaExplor.LBL_Settings.text = "Privacy Policy"
             
@@ -89,6 +103,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (8 == indexPath.row)
         {
+            let nikaExplor : NikaSettingsCell = tableView.dequeueReusableCell(withIdentifier: "NikaSettingsCell", for: indexPath) as! NikaSettingsCell
+            
             nikaExplor.IMG_Profile.image = UIImage(named: "SettingsRateUs")
             nikaExplor.LBL_Settings.text = "Rate us on the App Store"
             
@@ -100,6 +116,8 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
             
             cell = nikaLogOutCell
         }
+        
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -149,7 +167,12 @@ class NikaMyAccountViewCtrlr: UIViewController, UITableViewDataSource, UITableVi
         }
         else if (9 == indexPath.row)
         {
+            NikaFirebaseManager.sharedManager.logOutFromFirebase()
             
+            self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+//            self.parent?.dismiss(animated: true, completion: {
+//                
+//            })
         }
     }
     

@@ -18,7 +18,7 @@ class NikaFirebaseManager: NSObject {
     }()
     
     
-    var databaseRef: DatabaseReference = Database.database().reference(withPath: "nikamatch")
+    var databaseRef: DatabaseReference!
  
     func addUserProfile(userProfile : NikaUser)  {
         
@@ -95,6 +95,27 @@ class NikaFirebaseManager: NSObject {
                 })
             }
         }
+        
+    }
+    
+    func initializeReferences () {
+        
+        self.databaseRef = Database.database().reference(withPath: "nikamatch")
+        NikaFirebaseStorageManager.sharedManager.imgStorageRef = Storage.storage().reference(withPath: "nikamatch")
+    }
+    
+    func logOutFromFirebase() {
+        
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+        self.clearUserDefaults()
+    }
+    
+    func clearUserDefaults() {
         
     }
 }

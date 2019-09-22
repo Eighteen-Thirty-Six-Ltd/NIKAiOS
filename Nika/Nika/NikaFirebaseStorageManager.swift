@@ -17,7 +17,7 @@ class NikaFirebaseStorageManager: NSObject {
         return instance
     }()
     
-    var imgStorageRef: StorageReference = Storage.storage().reference(withPath: "nikamatch")
+    var imgStorageRef: StorageReference!
     
     func uploadImageToFirebaseStorage(imageIdentifier : String ,userInfo : NikaUser, image : UIImage, completion : ((_ uploadDone: Bool, _ error: Error?, _ storReference : StorageReference) -> Void)?) -> Void {
         

@@ -98,6 +98,7 @@ class NikeSignUpController: UIViewController {
 
                     if (error == nil)
                     {
+                        NikaFirebaseManager.sharedManager.initializeReferences()
                         NikaFirebaseManager.sharedManager.recoverExistingUserProfile(completion: { (userProfileInfo) in
                             
                             if let userObj = userProfileInfo {
@@ -162,6 +163,8 @@ class NikeSignUpController: UIViewController {
                         let baseNav = strongSelf.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
                         strongSelf.present(baseNav!, animated: true, completion: nil)
                          */
+                        
+                        NikaFirebaseManager.sharedManager.initializeReferences()
                         
                         NikaDataManager.sharedDataManager.userEmail = strongSelf.TEXTFIELD_Email.text!
                         let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
