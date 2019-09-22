@@ -59,17 +59,30 @@ class NikaFirebaseManager: NSObject {
     func uploadImageAndStoreURL(imageIdentifier : String ,userProfile : NikaUser, image : UIImage) {
         
         NikaFirebaseStorageManager.sharedManager.uploadImageToFirebaseStorage(imageIdentifier: imageIdentifier, userInfo: userProfile, image: image)
-        { (isUploaded, error) in
+        { (isUploaded, error, storReference) in
             
             if(isUploaded)
             {
-                NikaFirebaseStorageManager.sharedManager.imgStorageRef.downloadURL(completion: { (url, error) in
+                storReference.downloadURL(completion: { (url, error) in
                     
                     if let imageURL = url {
                         
-                        
-                        userProfile.photoPaths.append(imageURL.absoluteString)
-                        
+                        if(imageIdentifier == "mainPict")
+                        {
+                            userProfile.photoPaths.mainPic = imageURL.absoluteString
+                        }
+                        else if(imageIdentifier == "pict1")
+                        {
+                            userProfile.photoPaths.pic1 = imageURL.absoluteString
+                        }
+                        else if(imageIdentifier == "pict2")
+                        {
+                            userProfile.photoPaths.pic2 = imageURL.absoluteString
+                        }
+                        else if(imageIdentifier == "pict3")
+                        {
+                            userProfile.photoPaths.pic3 = imageURL.absoluteString
+                        }
 //                        NotificationCenter.default.post(name: .profileImageUploadedNotification, object: self, userInfo: nil)
                         
                         let userID : String = (Auth.auth().currentUser?.uid)!

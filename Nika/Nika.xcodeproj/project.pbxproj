@@ -491,6 +491,7 @@
 		9344F5D2232286EF007DDEBE /* NikaHomeCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344F5D1232286EF007DDEBE /* NikaHomeCtrlr.swift */; };
 		9365105C233790EB00D0FF75 /* NikaDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365105B233790EB00D0FF75 /* NikaDataManager.swift */; };
 		9365105E2337AA6D00D0FF75 /* NikaFirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9365105D2337AA6C00D0FF75 /* NikaFirebaseStorageManager.swift */; };
+		936510612337C26500D0FF75 /* NikaProfilePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936510602337C26500D0FF75 /* NikaProfilePhotos.swift */; };
 		939CD4B6232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD4B5232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift */; };
 		939CD4B8232A09B7004FE32F /* NikaSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD4B7232A09B7004FE32F /* NikaSettingsCell.swift */; };
 		939CD4BA232A1140004FE32F /* NikaLogOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD4B9232A1140004FE32F /* NikaLogOutCell.swift */; };
@@ -1065,6 +1066,7 @@
 		9344F5D1232286EF007DDEBE /* NikaHomeCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaHomeCtrlr.swift; sourceTree = "<group>"; };
 		9365105B233790EB00D0FF75 /* NikaDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaDataManager.swift; sourceTree = "<group>"; };
 		9365105D2337AA6C00D0FF75 /* NikaFirebaseStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NikaFirebaseStorageManager.swift; sourceTree = "<group>"; };
+		936510602337C26500D0FF75 /* NikaProfilePhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaProfilePhotos.swift; sourceTree = "<group>"; };
 		939CD4B5232A034D004FE32F /* NikaNotificationPermissionCtrlr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaNotificationPermissionCtrlr.swift; sourceTree = "<group>"; };
 		939CD4B7232A09B7004FE32F /* NikaSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaSettingsCell.swift; sourceTree = "<group>"; };
 		939CD4B9232A1140004FE32F /* NikaLogOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikaLogOutCell.swift; sourceTree = "<group>"; };
@@ -1132,7 +1134,6 @@
 				473E1FAF2332BA2E0093066E /* Resources */,
 				473E20C52332BA2E0093066E /* AppConstant.h */,
 				473E20C62332BA2E0093066E /* app-Bridging-Header.h */,
-				473E20C72332BA2E0093066E /* AppDelegate.swift */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
@@ -2616,12 +2617,14 @@
 				473E1E5C2332BA2E0093066E /* Messenger */,
 				93C34F87232F92E100D2B980 /* UserProfile */,
 				9327D1D223269FF3002F8B15 /* Views */,
+				9365105F2337C21000D0FF75 /* Model */,
 				9344F5C223222F1C007DDEBE /* OnBoarding */,
 				9344F59623222EDA007DDEBE /* ViewController.swift */,
 				9344F59823222EDA007DDEBE /* Main.storyboard */,
 				9344F59B23222EDE007DDEBE /* Assets.xcassets */,
 				9344F59D23222EDE007DDEBE /* LaunchScreen.storyboard */,
 				9344F5A023222EDE007DDEBE /* Info.plist */,
+				473E20C72332BA2E0093066E /* AppDelegate.swift */,
 				9344F5C7232231FD007DDEBE /* NikeSignUpController.swift */,
 				9344F5C923223D0C007DDEBE /* Extensions.swift */,
 				9344F5CB2322777F007DDEBE /* NikaPrivacyCtrlr.swift */,
@@ -2640,7 +2643,6 @@
 				93D7A7DA2337897A00CA746E /* NikaFirebaseManager.swift */,
 				9365105D2337AA6C00D0FF75 /* NikaFirebaseStorageManager.swift */,
 				9365105B233790EB00D0FF75 /* NikaDataManager.swift */,
-				93D7A7DC23378A3900CA746E /* NikaUser.swift */,
 			);
 			path = Nika;
 			sourceTree = "<group>";
@@ -2670,6 +2672,15 @@
 				9344F5C5232230BB007DDEBE /* NikaOnBoardingContentController.swift */,
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		9365105F2337C21000D0FF75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93D7A7DC23378A3900CA746E /* NikaUser.swift */,
+				936510602337C26500D0FF75 /* NikaProfilePhotos.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		93C34F87232F92E100D2B980 /* UserProfile */ = {
@@ -3202,6 +3213,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Nika/Pods-Nika-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
@@ -3215,7 +3228,6 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/NYTPhotoViewer/NYTPhotoViewer.framework",
@@ -3233,6 +3245,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
@@ -3246,7 +3260,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYTPhotoViewer.framework",
@@ -3427,6 +3440,7 @@
 				473E215A2332BA2F0093066E /* Date+Util.swift in Sources */,
 				473E21632332BA2F0093066E /* AdvertPremiumView.swift in Sources */,
 				473E216A2332BA2F0093066E /* Location.swift in Sources */,
+				936510612337C26500D0FF75 /* NikaProfilePhotos.swift in Sources */,
 				473E20DB2332BA2E0093066E /* RCSectionFooterCell.swift in Sources */,
 				473E214A2332BA2F0093066E /* AllMediaHeader.swift in Sources */,
 				473E214B2332BA2F0093066E /* ProfileView.swift in Sources */,

@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - ApiAI/Core (0.7.2)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -160,7 +163,6 @@ PODS:
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.2.2)
   - JGProgressHUD (2.0.4)
-  - Kingfisher (5.7.1)
   - leveldb-library (1.22)
   - MBProgressHUD (1.1.0)
   - MGSwipeTableCell (1.6.9)
@@ -192,6 +194,7 @@ PODS:
   - SoundManager (1.4.2)
 
 DEPENDENCIES:
+  - AlamofireImage
   - ApiAI/Core
   - Crashlytics
   - CropViewController
@@ -207,7 +210,6 @@ DEPENDENCIES:
   - FoldingCell
   - GoogleSignIn (~> 4.4.0)
   - JGProgressHUD
-  - Kingfisher
   - MBProgressHUD
   - MGSwipeTableCell
   - NYTPhotoViewer (= 1.2.0)
@@ -223,6 +225,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
     - ApiAI
     - Bolts
     - BoringSSL-GRPC
@@ -257,7 +261,6 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - JGProgressHUD
-    - Kingfisher
     - leveldb-library
     - MBProgressHUD
     - MGSwipeTableCell
@@ -275,6 +278,8 @@ SPEC REPOS:
     - SoundManager
 
 SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   ApiAI: d4b49d3736f33ce6f3ef66dc33c0e0fccb23579e
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -309,7 +314,6 @@ SPEC CHECKSUMS:
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
-  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MGSwipeTableCell: 17349a8b56c81245bd77671251eb8aa9d486d46b
@@ -326,6 +330,6 @@ SPEC CHECKSUMS:
   SinchVerification: 3bf62ff2d57eb10ecc27796ce9736c786644fe23
   SoundManager: 99ae328a3ec9b259db774c9851a65feeceba8183
 
-PODFILE CHECKSUM: a8d1a7bc629124cb195891a170dc0bc3adec7fe2
+PODFILE CHECKSUM: c778ad250a0617ed36725c3b93e4a8619eccb376
 
 COCOAPODS: 1.6.1

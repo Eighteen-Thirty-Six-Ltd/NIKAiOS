@@ -72,6 +72,8 @@ class CreateProfileBasicCtrlr: UIViewController {
         
         if (TEXT_FirstName.text!.count > 0)
         {
+            NikaDataManager.sharedDataManager.userProf.emailID = NikaDataManager.sharedDataManager.userEmail
+            
             NikaDataManager.sharedDataManager.userProf.firstName = TEXT_FirstName.text
             NikaDataManager.sharedDataManager.userProf.lastName = TEXT_LastName.text
             NikaDataManager.sharedDataManager.userProf.location = TEXT_Location.text

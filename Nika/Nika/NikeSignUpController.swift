@@ -93,94 +93,112 @@ class NikeSignUpController: UIViewController {
             {
 //                TODO:- CROSS CHECK WITH @BASAVRAJ
                 
-//                Auth.auth().signIn(withEmail: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { [weak self] user, error in
-//                    guard let strongSelf = self else { return }
-//
-//                    MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
-//
-//                    if (error == nil)
-//                    {
-//                        let baseNav = self?.storyboard?.instantiateViewController(withIdentifier: "NikaHomeCtrlr")
-//                        strongSelf.present(baseNav!, animated: true, completion: nil)
-//                    }
-//                    else
-//                    {
-//                        let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: .alert)
-//                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-//                            switch action.style{
-//                            case .default:
-//                                print("default")
-//
-//                            case .cancel:
-//                                print("cancel")
-//
-//                            case .destructive:
-//                                print("destructive")
-//
-//
-//                            }}))
-//                        strongSelf.present(alert, animated: true, completion: nil)
-//                    }
-//                }
-                
-                LogoutUser(delAccount: DEL_ACCOUNT_NONE)
-                FUser.signIn(email: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { (user, error) in
-                    if error == nil {
-                        Account.add(email: self.TEXTFIELD_Email.text!, password: self.TEXTFIELD_Password.text!)
-                        UserLoggedIn(loginMethod: LOGIN_EMAIL)
+                Auth.auth().signIn(withEmail: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { [weak self] user, error in
+                    guard let strongSelf = self else { return }
+
+                    if (error == nil)
+                    {
+                        NikaFirebaseManager.sharedManager.recoverExistingUserProfile(completion: { (userProfileInfo) in
+                            
+                            if let userObj = userProfileInfo {
+                                
+                                NikaDataManager.sharedDataManager.userProf = userObj
+                                NikaDataManager.sharedDataManager.userProf.emailID = strongSelf.TEXTFIELD_Email.text!
+                                
+                                MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
+                            }
+                            
+                            let baseNav = self?.storyboard?.instantiateViewController(withIdentifier: "NikaHomeCtrlr")
+                            strongSelf.present(baseNav!, animated: true, completion: nil)
+                        })
+                    }
+                    else
+                    {
+                        MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
                         
-                        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
-                        let baseNav = self.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
-                        self.present(baseNav!, animated: true, completion: nil)
+                        let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                                
+                            }}))
+                        strongSelf.present(alert, animated: true, completion: nil)
                     }
                 }
+                
+//                LogoutUser(delAccount: DEL_ACCOUNT_NONE)
+//                FUser.signIn(email: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { (user, error) in
+//                    if error == nil {
+//                        Account.add(email: self.TEXTFIELD_Email.text!, password: self.TEXTFIELD_Password.text!)
+//                        UserLoggedIn(loginMethod: LOGIN_EMAIL)
+//
+//                        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+//                        let baseNav = self.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
+//                        self.present(baseNav!, animated: true, completion: nil)
+//                    }
+//                }
             }
             else
             {
 //                TODO:- CROSS CHECK WITH @BASAVRAJ
                 
-//                Auth.auth().createUser(withEmail: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { [weak self] user, error in
-//
-//                    guard let strongSelf = self else { return }
-//
-//                    MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
-//
-//                    if (error == nil)
-//                    {
-//                        let baseNav = strongSelf.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
-//                        strongSelf.present(baseNav!, animated: true, completion: nil)
-//
-//                    }
-//                    else
-//                    {
-//                        let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: .alert)
-//                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-//                            switch action.style{
-//                            case .default:
-//                                print("default")
-//
-//                            case .cancel:
-//                                print("cancel")
-//
-//                            case .destructive:
-//                                print("destructive")
-//
-//
-//                            }}))
-//                        strongSelf.present(alert, animated: true, completion: nil)
-//                    }
-//                }
-                
-                FUser.createUser(email: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { user, error in
-                    if error == nil {
-                        Account.add(email: self.TEXTFIELD_Email.text!, password: self.TEXTFIELD_Password.text!)
-                        UserLoggedIn(loginMethod: LOGIN_EMAIL)
+                Auth.auth().createUser(withEmail: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { [weak self] user, error in
+
+                    guard let strongSelf = self else { return }
+
+                    MBProgressHUD.hideAllHUDs(for: strongSelf.view, animated: true)
+
+                    if (error == nil)
+                    {
+                        /*
+                        let baseNav = strongSelf.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
+                        strongSelf.present(baseNav!, animated: true, completion: nil)
+                         */
                         
-                        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
-                        let baseNav = self.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
-                        self.present(baseNav!, animated: true, completion: nil)
+                        NikaDataManager.sharedDataManager.userEmail = strongSelf.TEXTFIELD_Email.text!
+                        let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+                        let baseNav = profileStoryboard.instantiateViewController(withIdentifier: "ProfileNavigationCtrlr")
+                        strongSelf.present(baseNav, animated: true, completion: nil)
+
+                    }
+                    else
+                    {
+                        let alert = UIAlertController(title: "Alert", message: error?.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+
+                            case .cancel:
+                                print("cancel")
+
+                            case .destructive:
+                                print("destructive")
+
+
+                            }}))
+                        strongSelf.present(alert, animated: true, completion: nil)
                     }
                 }
+                
+//                FUser.createUser(email: TEXTFIELD_Email.text!, password: TEXTFIELD_Password.text!) { user, error in
+//                    if error == nil {
+//                        Account.add(email: self.TEXTFIELD_Email.text!, password: self.TEXTFIELD_Password.text!)
+//                        UserLoggedIn(loginMethod: LOGIN_EMAIL)
+//                        
+//                        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+//                        let baseNav = self.storyboard?.instantiateViewController(withIdentifier: "NikaVerifyEmailCtrlr")
+//                        self.present(baseNav!, animated: true, completion: nil)
+//                    }
+//                }
             }
             
             

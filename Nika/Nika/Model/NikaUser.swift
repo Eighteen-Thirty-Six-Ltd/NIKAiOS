@@ -36,7 +36,7 @@ class NikaUser: NSObject {
     var language : String!
     var ethnicity : String!
     var ethnicCtry : String!
-    var photoPaths : [String]!
+    var photoPaths : NikaProfilePhotos!
     
     override init() {
         
@@ -65,7 +65,7 @@ class NikaUser: NSObject {
         self.language = ""
         self.ethnicity = ""
         self.ethnicCtry = ""
-        self.photoPaths = [String]()
+        self.photoPaths = NikaProfilePhotos()
     }
     
 //    init(phoneNumber: String, name: String, isBizOwnerOrRep: Bool, profilePhotoStoragePath: String, appID: String, key: String = "") {
@@ -263,12 +263,21 @@ class NikaUser: NSObject {
                 self.ethnicCtry = ""
             }
             
-            if let paths = value["photoPaths"] as? [String] {
-                self.photoPaths = paths
+//            if let paths = value["photoPaths"] as? [String] {
+//                self.photoPaths = paths
+//            }
+//            else
+//            {
+//                self.photoPaths = [String]()
+//            }
+            
+            if let paths = value["photoPaths"]  {
+                
+                self.photoPaths = NikaProfilePhotos(fromDicvalue: paths as! [String : AnyObject])
             }
             else
             {
-                self.photoPaths = [String]()
+                self.photoPaths = NikaProfilePhotos()
             }
         }
         else
@@ -301,7 +310,7 @@ class NikaUser: NSObject {
             "smoke": self.smoke,
             "ethnicity": self.ethnicity,
             "ethnicCtry": self.ethnicCtry,
-            "photoPaths": self.photoPaths
+            "photoPaths": self.photoPaths.toDictionary()
             ] as [AnyHashable:Any]
     }
     

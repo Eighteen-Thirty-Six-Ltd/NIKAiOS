@@ -17,4 +17,5 @@ class NikaDataManager: NSObject {
     }()
     
     var userProf: NikaUser = NikaUser()
+    var userEmail = ""
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -45,17 +46,41 @@ class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegat
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if (self.isEditMode)
+        if ((self.isMovingToParent && !self.isEditMode) || (self.isBeingPresented && self.isEditMode))
         {
-            LBL_Header.text = "Edit Profile"
-            LBL_Step5.isHidden = true
-            
-            BTN_Next.setTitle("SUBMIT", for: .normal)
-        }
-        else
-        {
-            LBL_Header.text = "Create Profile"
-            BTN_Next.setTitle("NEXT", for: .normal)
+            if (self.isEditMode)
+            {
+                LBL_Header.text = "Edit Profile"
+                LBL_Step5.isHidden = true
+                
+                BTN_Next.setTitle("SUBMIT", for: .normal)
+                
+                if let mainPic = NikaDataManager.sharedDataManager.userProf.photoPaths.mainPic
+                {
+                    IMAGE_ProfilePic.af_setImage(withURL: URL(string: mainPic)!, placeholderImage: UIImage(named: ""))
+                }
+                
+                if let pic1 = NikaDataManager.sharedDataManager.userProf.photoPaths.pic1
+                {
+                    IMAGE_Pict1.af_setImage(withURL: URL(string: pic1)!, placeholderImage: UIImage(named: ""))
+                }
+                
+                if let pic2 = NikaDataManager.sharedDataManager.userProf.photoPaths.pic2
+                {
+                    IMAGE_Pict2.af_setImage(withURL: URL(string: pic2)!, placeholderImage: UIImage(named: ""))
+                }
+                
+                if let pic3 = NikaDataManager.sharedDataManager.userProf.photoPaths.pic3
+                {
+                    IMAGE_Pict3.af_setImage(withURL: URL(string: pic3)!, placeholderImage: UIImage(named: ""))
+                }
+                
+            }
+            else
+            {
+                LBL_Header.text = "Create Profile"
+                BTN_Next.setTitle("NEXT", for: .normal)
+            }
         }
     }
 
@@ -73,6 +98,26 @@ class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegat
         if (self.isEditMode)
         {
             NikaFirebaseManager.sharedManager.updateUserProfile(userProfile: NikaDataManager.sharedDataManager.userProf)
+            
+            if let profImage = IMAGE_ProfilePic.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "mainPict", userProfile: NikaDataManager.sharedDataManager.userProf, image: profImage)
+            }
+            
+            if let pict1 = IMAGE_Pict1.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "pict1", userProfile: NikaDataManager.sharedDataManager.userProf, image: pict1)
+            }
+            
+            if let pict2 = IMAGE_Pict2.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "pict2", userProfile: NikaDataManager.sharedDataManager.userProf, image: pict2)
+            }
+            
+            if let pict3 = IMAGE_Pict3.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "pict3", userProfile: NikaDataManager.sharedDataManager.userProf, image: pict3)
+            }
             
             let alert = UIAlertController(title: "Alert", message: "Successfully updated", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
@@ -94,6 +139,26 @@ class CreateProfilePhotosCtrlr: UIViewController, UIImagePickerControllerDelegat
         else
         {
             NikaFirebaseManager.sharedManager.addUserProfile(userProfile: NikaDataManager.sharedDataManager.userProf)
+            
+            if let profImage = IMAGE_ProfilePic.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "mainPict", userProfile: NikaDataManager.sharedDataManager.userProf, image: profImage)
+            }
+            
+            if let pict1 = IMAGE_Pict1.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "pict1", userProfile: NikaDataManager.sharedDataManager.userProf, image: pict1)
+            }
+            
+            if let pict2 = IMAGE_Pict2.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "pict2", userProfile: NikaDataManager.sharedDataManager.userProf, image: pict2)
+            }
+            
+            if let pict3 = IMAGE_Pict3.image
+            {
+                NikaFirebaseManager.sharedManager.uploadImageAndStoreURL(imageIdentifier: "pict3", userProfile: NikaDataManager.sharedDataManager.userProf, image: pict3)
+            }
             
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let baseNav = mainStoryboard.instantiateViewController(withIdentifier: "NikaLocationPermissionCtrlr")

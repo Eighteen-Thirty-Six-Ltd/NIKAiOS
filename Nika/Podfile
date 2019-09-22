@@ -45,7 +45,7 @@ target 'Nika' do
   pod 'Reachability'
   pod 'RNCryptor-objc'
   pod 'SoundManager'
-  pod 'Kingfisher'
+  pod 'AlamofireImage'
 
   target 'NikaTests' do
     inherit! :search_paths

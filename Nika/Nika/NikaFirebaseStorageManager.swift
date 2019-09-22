@@ -19,22 +19,24 @@ class NikaFirebaseStorageManager: NSObject {
     
     var imgStorageRef: StorageReference = Storage.storage().reference(withPath: "nikamatch")
     
-    func uploadImageToFirebaseStorage(imageIdentifier : String ,userInfo : NikaUser, image : UIImage, completion : ((_ uploadDone: Bool, _ error: Error?) -> Void)?) -> Void {
+    func uploadImageToFirebaseStorage(imageIdentifier : String ,userInfo : NikaUser, image : UIImage, completion : ((_ uploadDone: Bool, _ error: Error?, _ storReference : StorageReference) -> Void)?) -> Void {
         
         let compressImageData = image.jpegData(compressionQuality: 0.5)
         
-        self.imgStorageRef = self.imgStorageRef.child(userInfo.emailID).child(String(format: "%@.png", imageIdentifier))
+        var imgStorageRefTemp: StorageReference = Storage.storage().reference(withPath: "nikamatch")
         
-        self.imgStorageRef.putData(compressImageData! as Data, metadata: nil) { (metadata, error) in
+        imgStorageRefTemp = imgStorageRefTemp.child(userInfo.emailID).child(String(format: "%@.png", imageIdentifier))
+        
+        imgStorageRefTemp.putData(compressImageData! as Data, metadata: nil) { (metadata, error) in
             
             if let handler = completion {
                 
                 if let anyError = error {
-                    handler(false,anyError)
+                    handler(false,anyError,imgStorageRefTemp)
                 }
                 else
                 {                    
-                    handler(true,nil)
+                    handler(true,nil,imgStorageRefTemp)
                 }
             }
         }
