@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINServiceDelegate, SINCa
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //        Firebase
-        let filePath = Bundle.main.path(forResource: "GoogleService-InfoBasavaraj", ofType: "plist")!
+        let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
         let options = FirebaseOptions(contentsOfFile: filePath)
         FirebaseApp.configure(options: options!)
         
